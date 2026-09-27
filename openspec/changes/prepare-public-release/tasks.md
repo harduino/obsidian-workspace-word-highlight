@@ -11,4 +11,4 @@
 - [x] 3.1 Run npm ci, check, package and strict release:check locally.
 - [ ] 3.2 Test real desktop and Android selection/scroll/upgrade matrix (owner/device pending).
 - [x] 3.3 Push the CI-tested commit, tag 1.0.4, verify assets and publish the reviewed draft.
-- [ ] 3.4 Submit through Community dashboard and address review (owner pending).
+- [x] 3.4 Owner submitted and published the Community listing after review completed without Errors; warnings/recommendations recorded in release-readiness docs.

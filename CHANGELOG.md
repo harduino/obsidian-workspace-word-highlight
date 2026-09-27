@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Detailed Obsidian/Android compatibility coverage and Community directory submission remain pending; the owner reports basic desktop/Android smoke tests passed.
+- Detailed Obsidian/Android compatibility coverage remains open; the owner reports basic desktop/Android smoke tests passed.
 
 ## 1.0.4 — first public release
 
