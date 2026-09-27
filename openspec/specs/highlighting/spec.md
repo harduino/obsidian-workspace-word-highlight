@@ -1,7 +1,7 @@
-# Highlighting baseline (local 1.0.3)
+# Editor highlighting specification
 
 ## Purpose
-Characterize the existing local editor highlighting behavior without asserting untested host or device behavior.
+Define the published 1.0.4 editor highlighting behavior, based on the local 1.0.3 ViewPlugin architecture, without asserting untested host or device behavior.
 
 ## Requirements
 
@@ -31,7 +31,11 @@ Decorations SHALL scan CodeMirror visible ranges and cap accepted matches per ed
 - **THEN** its query is cleared and the remaining views are scheduled for refresh
 
 ### Requirement: Android selection protection
-With the guard enabled on Android, a non-empty selection without document changes SHALL defer rebuilding that editor's marks until selection collapses. A document-changing transaction SHALL rebuild immediately.
+With the guard enabled on Android, a non-empty selection without document changes SHALL defer mark rebuilds for query changes until collapse. Explicit Clear or Disable SHALL clear decorations immediately even during selection. A document-changing transaction SHALL rebuild immediately.
+
+#### Scenario: Clear during Android selection
+- **WHEN** Clear is invoked while the Android source editor has a non-empty selection
+- **THEN** the source and other panes have no highlight marks
 
 #### Scenario: Cut during selection
 - **WHEN** a cut changes the document during a non-empty Android selection

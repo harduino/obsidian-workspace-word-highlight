@@ -2,6 +2,12 @@
 
 Highlight the word under the cursor or selected text across Markdown editor panes in Obsidian. In a split workspace, a query from the focused editor is shared with other registered editor panes, including different notes. Source mode and Live Preview use the same CodeMirror decorations; notes are never modified.
 
+## Demo
+
+![Real Obsidian recording: matching text is highlighted in two panes containing different notes](docs/assets/workspace-word-highlight.gif)
+
+The two panes show separate synthetic notes (`alpha` and `beta`). Selecting text in either pane updates matching highlights in the other pane.
+
 ## Use and limitations
 
 Place the caret **inside** a word (not immediately after it), or select single-line text. Cursor words use Unicode letters/digits, underscore and optionally additional word characters; selected text is matched literally, including punctuation and spaces. Whole-word mode applies only to cursor words. The primary selection is used; multiline or >500 UTF-16-unit selections are ignored. Only CodeMirror visible ranges are scanned, with a configurable per-editor match cap. Hidden tabs may retain an editor view; actual Obsidian leaf visibility and pop-out behavior need host testing. Reading View is not highlighted.
