@@ -1,0 +1,14 @@
+schema: spec-driven
+context: |
+  TypeScript Obsidian plugin using host-provided CodeMirror 6 and esbuild.
+  Plugin ID workspace-word-highlight. Baseline is local 1.0.3 (1.0.1 architecture
+  with Android selection guard), not the rejected 1.0.2 layer design.
+  Write specs, scenarios and developer documents in English. Preserve existing
+  settings keys, CSS classes and command IDs. Characterize production behavior
+  before fixing it; require regression tests for behavior changes. Tests with
+  mocked Obsidian APIs do not establish Android native selection correctness.
+rules:
+  proposal:
+    - State non-goals and manual release gates.
+  tasks:
+    - Keep automated checks distinct from pending device checks.

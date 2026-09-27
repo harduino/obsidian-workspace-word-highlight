@@ -1,0 +1,28 @@
+/*
+ * Workspace Word Highlight
+ *
+ * Intentionally plain, readable CSS. Edit these variables/classes directly if
+ * you want different colors or borders. Nothing in this file is generated or
+ * minified.
+ */
+
+.workspace-word-highlight {
+  background-color: color-mix(in srgb, var(--text-accent) 24%, transparent);
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--text-accent) 42%, transparent);
+}
+
+.workspace-word-highlight-active {
+  background-color: color-mix(in srgb, var(--text-accent) 36%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--text-accent) 68%, transparent);
+}
+
+/*
+ * Prevent Chromium scroll anchoring from reacting to the DOM spans that
+ * CodeMirror creates/removes for highlight marks. Modern CodeMirror versions
+ * already set this in their base theme, but keeping it here also covers
+ * Obsidian builds/themes that override or predate that rule.
+ */
+.markdown-source-view.mod-cm6 .cm-scroller {
+  overflow-anchor: none;
+}

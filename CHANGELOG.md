@@ -1,0 +1,12 @@
+# Changelog
+
+## Unreleased
+
+- Manual Obsidian/Android verification and public submission are pending.
+
+## 1.0.4 — proposed first public release (not published)
+
+- Reproducible unminified assets, OpenSpec, characterization tests and release checks.
+- Clear highlighted marks immediately during an Android non-empty selection.
+- Use directory-compliant command IDs for the first public release; users of unpublished local builds may need to rebind hotkeys.
+- Preserves local 1.0.3 behavior based on 1.0.1, including Android selection guard; the discarded 1.0.2 layer approach is not included.

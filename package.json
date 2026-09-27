@@ -1,0 +1,52 @@
+{
+  "name": "obsidian-workspace-word-highlight",
+  "version": "1.0.4",
+  "private": true,
+  "author": "harduino",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harduino/obsidian-workspace-word-highlight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harduino/obsidian-workspace-word-highlight/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "description": "Highlight the word under the cursor or selected text across all visible Markdown editor panes.",
+  "main": "main.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs production",
+    "dev": "node esbuild.config.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "check": "npm run lint && npm run typecheck && npm test && openspec validate --all --strict --no-interactive && npm run build",
+    "package": "npm run build && node scripts/package.mjs",
+    "release:check": "node scripts/release-check.mjs",
+    "version:sync": "node scripts/version-sync.mjs"
+  },
+  "keywords": [
+    "obsidian",
+    "codemirror",
+    "highlight"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@codemirror/state": "6.5.0",
+    "@codemirror/view": "6.38.6",
+    "@eslint/json": "0.14.0",
+    "@fission-ai/openspec": "1.13.2",
+    "@types/node": "22.15.17",
+    "esbuild": "0.25.5",
+    "eslint": "9.39.1",
+    "eslint-plugin-obsidianmd": "0.4.2",
+    "fflate": "0.8.3",
+    "jsdom": "26.1.0",
+    "obsidian": "1.8.7",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.46.4",
+    "vite": "7.3.6",
+    "vitest": "5.0.2"
+  }
+}

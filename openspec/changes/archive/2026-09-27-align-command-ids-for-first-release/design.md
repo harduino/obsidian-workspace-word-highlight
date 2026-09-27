@@ -1,0 +1,3 @@
+# Design
+
+Use `toggle-highlighting` and `clear-highlighting` as command IDs, which Obsidian will automatically namespace under `workspace-word-highlight`. Shorten visible names to `Toggle highlights` and `Clear highlights` without changing callback behavior. This is a narrow, owner-authorized exception to the local 1.0.3 compatibility baseline. Since the repository has no public releases, no published hotkey mapping requires migration; local unpublished installations with custom hotkeys may need manual rebinding. Characterize registration through `onload()` with only the Obsidian boundary mocked. Leave the release packaging and Android behavior untouched.

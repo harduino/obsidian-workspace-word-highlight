@@ -1,0 +1,9 @@
+{
+  "id": "workspace-word-highlight",
+  "name": "Workspace Word Highlight",
+  "version": "1.0.4",
+  "minAppVersion": "1.5.0",
+  "description": "Highlight the word under the cursor or selected text across all visible Markdown editor panes.",
+  "author": "harduino",
+  "isDesktopOnly": false
+}

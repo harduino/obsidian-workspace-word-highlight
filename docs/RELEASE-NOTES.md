@@ -1,0 +1,3 @@
+# Workspace Word Highlight 1.0.4
+
+First public release. Highlight a cursor word or literal selection across registered Markdown editor panes in Source mode and Live Preview. The Android selection guard is retained from the local 1.0.3 baseline; explicit Clear/Disable now removes marks even during selection. Commands use directory-compliant IDs; hotkeys from unpublished local builds may need rebinding. Release assets are readable and not minified. The owner reports successful basic desktop and Android smoke tests; detailed device/version and specialized matrix results are not available. See README for installation and limitations.
