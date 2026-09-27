@@ -1,4 +1,4 @@
-# Manual acceptance tests — 1.0.4 candidate
+# Manual compatibility follow-ups — published editor behavior since 1.0.4
 
 **Owner-reported overall result: PASS — basic desktop and real Android smoke tests before 1.0.4 release.** The owner confirms both platforms work and accepts proceeding without further specialized testing. Exact Obsidian/OS/WebView versions, build hash and individual case results were not supplied, so case rows remain *not individually evidenced* rather than falsely claiming each procedure passed (especially 1.5.0, pop-out and upgrades). A Node/JSDOM run or Chromium screenshot is not evidence for Android selection handles. Do not attach private notes, logs, tokens or a full vault to a bug report.
 
@@ -21,10 +21,10 @@ Record a case as **pass** only when its expected result was observed in the stat
 
 ## Set up a disposable vault
 
-1. On the build machine run `npm ci`, `npm run check`, `npm run package`, `RELEASE_TAG=1.0.4 npm run release:check` and, from `dist/`, `sha256sum -c SHA256SUMS`. Keep this test build separate from a user vault.
-2. In a **new, empty test vault**, create `.obsidian/plugins/workspace-word-highlight/` and copy *only* `dist/main.js`, `dist/manifest.json`, `dist/styles.css` there. Do not use the repository name as the installation folder. Alternatively extract `dist/workspace-word-highlight-1.0.4.zip` under `.obsidian/plugins/` and inspect its single `workspace-word-highlight/` folder. For Android, transfer the three runtime files to a disposable vault on the device; record the file-transfer method and resulting hash. Do not change the owner's existing vault or settings.
+1. On the build machine run `npm ci`, `npm run check`, `npm run package`, `RELEASE_TAG=1.0.5 npm run release:check` and, from `dist/`, `sha256sum -c SHA256SUMS`. For later versions, use that version in `RELEASE_TAG`. Keep this test build separate from a user vault.
+2. In a **new, empty test vault**, create `.obsidian/plugins/workspace-word-highlight/` and copy *only* `dist/main.js`, `dist/manifest.json`, `dist/styles.css` there. Do not use the repository name as the installation folder. Alternatively extract `dist/workspace-word-highlight-1.0.5.zip` under `.obsidian/plugins/` and inspect its single `workspace-word-highlight/` folder. For later versions use their matching ZIP. For Android, transfer the three runtime files to a disposable vault on the device; record the file-transfer method and resulting hash. Do not change the owner's existing vault or settings.
 3. Copy [alpha.md](fixtures/alpha.md) and [beta.md](fixtures/beta.md) into the test vault as ordinary notes. Enable Community plugins in Obsidian and enable **Workspace Word Highlight**. Put the two notes into different split Markdown panes. Use an additional disposable long note made by repeating the synthetic text and headings (no private content) for scrolling/folding cases.
-4. Start with defaults: enabled, case sensitive, whole words, min length 2, Android guard on, debounce 25 ms. Record any changed setting before a case. Capture a real split-pane screen recording for the optional showcase only after checking the screen for personal information. No screenshot is currently claimed as completed.
+4. Start with defaults: enabled, case sensitive, whole words, min length 2, Android guard on, debounce 25 ms. Record any changed setting before a case. A real two-pane GIF from synthetic notes is in `docs/assets/`; inspect any future showcase replacement for personal information. No separate static screenshot is claimed as completed.
 
 ## Desktop and common editor cases
 
