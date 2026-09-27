@@ -1,7 +1,7 @@
 # Editor highlighting specification
 
 ## Purpose
-Define the published 1.0.4 editor highlighting behavior, based on the local 1.0.3 ViewPlugin architecture, without asserting untested host or device behavior.
+Define the published editor highlighting behavior established in 1.0.4, based on the local 1.0.3 ViewPlugin architecture, without asserting untested host or device behavior.
 
 ## Requirements
 

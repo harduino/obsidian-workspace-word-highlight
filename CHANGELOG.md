@@ -4,6 +4,11 @@
 
 - Detailed Obsidian/Android compatibility coverage remains open; the owner reports basic desktop/Android smoke tests passed.
 
+## 1.0.5 — README demo refresh
+
+- Add a real GIF of matching highlights across two different notes to the README for GitHub and the directory's next release scan. Runtime JavaScript and CSS are unchanged from 1.0.4; release metadata advances to 1.0.5.
+- Archive the completed first-public-release OpenSpec change with the owner's explicit acceptance of incomplete specialized manual coverage. Outstanding cases remain listed in `docs/MANUAL-TESTS.md`.
+
 ## 1.0.4 — first public release
 
 - Reproducible unminified assets, OpenSpec, characterization tests and release checks.
