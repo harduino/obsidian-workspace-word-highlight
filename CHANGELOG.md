@@ -2,9 +2,9 @@
 
 ## Unreleased
 
-- Manual Obsidian/Android verification and public submission are pending.
+- Detailed Obsidian/Android compatibility coverage and Community directory submission remain pending; the owner reports basic desktop/Android smoke tests passed.
 
-## 1.0.4 — proposed first public release (not published)
+## 1.0.4 — first public release
 
 - Reproducible unminified assets, OpenSpec, characterization tests and release checks.
 - Clear highlighted marks immediately during an Android non-empty selection.

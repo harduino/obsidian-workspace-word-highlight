@@ -12,7 +12,7 @@ The Android selection guard is on by default. While a non-empty selection exists
 
 ## Installation
 
-After a release is published, download its separate `manifest.json`, `main.js` and `styles.css` assets into `.obsidian/plugins/workspace-word-highlight/` in a **test vault**, reload Obsidian and enable the plugin under Community plugins. Alternatively extract the release ZIP into `.obsidian/plugins/`; it contains exactly `workspace-word-highlight/` with those three files. Community Plugins search installation becomes available only after directory acceptance.
+Download the separate `manifest.json`, `main.js` and `styles.css` assets from the [1.0.4 release](https://github.com/harduino/obsidian-workspace-word-highlight/releases/tag/1.0.4) into `.obsidian/plugins/workspace-word-highlight/`, reload Obsidian and enable the plugin under Community plugins. Alternatively extract the release ZIP into `.obsidian/plugins/`; it contains exactly `workspace-word-highlight/` with those three files. Community Plugins search installation becomes available only after directory acceptance.
 
 ## Development and transparency
 
